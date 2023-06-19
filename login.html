@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="robots" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="google-site-verification" content="nVIjVuQeYF5-Sw03Y_PI1oJqv3sUFo3j8Qg72FlPBqM" />
+    <meta name="description" content="Trade currencies, stocks, commodities, futures, bonds, and digital assets safely and securely with power for better trades. IC Markets EU" />
+<meta name="keywords" content="Trading, Forex broker, Online forex trading, Crypto, Bitcoin, Forex, MT4, MT5, cTrader, IC Markets" />
+    <meta property="og:description" content="IC Markets | Login" />
+    <meta property="og:image" content="assist/img/favicon.png" />
+    <meta name="format-detection" content="telephone=no">
+    <title>IC Markets | Login</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="assist/img/favicon.png">
+    
+    <link href="https://zenix.dexignzone.com/laravel/demo/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assist/style/style.css">    
+
+    <script src="https://kit.fontawesome.com/5f3d15863c.js" crossorigin="anonymous"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+</head>
+
+<body class="vh-100">
+    <div class="authincation h-100">
+        <div class="container h-100">
+            <div class="row justify-content-center h-100 align-items-center">
+			    <div class="col-md-6">
+        <div class="authincation-content">
+            <div class="row no-gutters">
+                <div class="col-xl-12">
+                    <div class="auth-form">
+    					<div class="text-center mb-3">
+    						<img src="assist/img/IC_Markets_logo_main.gif" style="width: 50%;" alt="">
+    					</div>
+                        <h4 class="text-center mb-4">Sign in your account</h4>
+                        <form >
+                            <div class="form-group">
+                                <label class="mb-1"><strong>Email</strong></label>
+                                <div class="input-group">
+                                    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                                    <input type="text" class="form-control" id="username" placeholder="Enter a username.." required="">
+                                    <div class="invalid-feedback">
+                                        Please Enter a username.
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="mb-1"><strong>Password</strong></label>
+                                <div class="input-group transparent-append">
+                                    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                                    <input type="password" class="form-control" id="password" placeholder="Choose a safe one.." required="">
+                                    <span class="input-group-text show-pass"> 
+                                        <i class="fa fa-eye-slash"></i>
+                                        <i class="fa fa-eye"></i>
+                                    </span>
+                                    <div class="invalid-feedback">
+                                        Please Enter a username.
+                                    </div>
+                                </div>
+                            </div>
+
+                          
+
+
+                         
+                            <div class="form-row d-flex justify-content-between mt-4 mb-2">
+                                <div class="form-group">
+                                   <div class="custom-control custom-checkbox ms-1">
+    									<input type="checkbox" class="form-check-input" id="basic_checkbox_1">
+    									<label class="form-check-label" for="basic_checkbox_1">Remember my preference</label>
+    								</div>
+                                </div>
+                                <div class="form-group">
+                                    <a href="forgot-password.html">Forgot Password?</a>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <input type="button" value="Login" id="submit" onclick="validate()" class="btn btn-primary btn-block"
+                                  type="submit"/>
+                            </div>
+                        </form>
+                        <div class="new-account mt-3">
+                            <p>Don't have an account? <a class="text-primary" href="register.html">Sign up</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var attempt = 3; // Variable to count number of attempts.
+    // Below function Executes on click of login button.
+    function validate(){
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    if ( username == "09070365502" && password == "0104423791"){
+    alert ("Login successfully");
+    window.location = "dashboard.html"; // Redirecting to other page.
+    return false;
+    }
+    else{
+    attempt --;// Decrementing by one.
+    alert("You have left "+attempt+" attempt;");
+    // Disabling fields after 3 attempts.
+    if( attempt == 0){
+    document.getElementById("username").disabled = true;
+    document.getElementById("password").disabled = true;
+    document.getElementById("submit").disabled = true;
+    return false;
+    }
+    }
+    }
+    </script>
+
+<script>
+    (function () {
+        'use strict'
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+                form.classList.add('was-validated')
+            }, false)
+        })
+    })()
+</script>
+
+
+<script src="https://zenix.dexignzone.com/laravel/demo/vendor/global/global.min.js" type="text/javascript"></script>
+				<script src="https://zenix.dexignzone.com/laravel/demo/vendor/bootstrap-select/dist/js/bootstrap-select.min.js" type="text/javascript"></script>
+					<script src="https://zenix.dexignzone.com/laravel/demo/js/custom.js" type="text/javascript"></script>
+				<script src="https://zenix.dexignzone.com/laravel/demo/js/deznav-init.js" type="text/javascript"></script>
+				<script src="https://zenix.dexignzone.com/laravel/demo/js/demo.js" type="text/javascript"></script>
+				<script src="https://zenix.dexignzone.com/laravel/demo/js/styleSwitcher.js" type="text/javascript"></script>
+	</body>
+
+</html>

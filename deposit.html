@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="https://zenix.dexignzone.com/laravel/social-image.png" />
+    <meta name="format-detection" content="telephone=no">
+    <title>IC Markets | Dashboard</title>
+    <script src="https://kit.fontawesome.com/5f3d15863c.js" crossorigin="anonymous"></script>
+    <!-- Favicon icon -->
+	<link rel="icon" type="image/png" sizes="16x16" href="assist/img/favicon.png">    
+         
+                    <link href="https://zenix.dexignzone.com/laravel/demo/vendor/chartist/css/chartist.min.css" rel="stylesheet" type="text/css"/>
+                    <link href="https://zenix.dexignzone.com/laravel/demo/vendor/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css"/>
+              
+                    <link rel="stylesheet" href="assist/style/daterangepicker.css">
+                    <script src="assist/js/daterangepicker.js"></script>
+                    <script src="assist/js/moment.min.js"></script>
+    
+                    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+                    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+                    <link href="https://zenix.dexignzone.com/laravel/demo/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet" type="text/css"/>
+                    <link href="https://zenix.dexignzone.com/laravel/demo/css/style.css" rel="stylesheet" type="text/css"/>
+                    <link rel="stylesheet" href="assist/style/style.css">
+              <link rel="stylesheet" href="assist/new/stylesheet.css">
+    
+			<link rel="stylesheet" href="assist/style/dashboard.css">
+			<!--icon link-->
+            <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+            <style>
+                ion-icon{
+                    font-size: 20px;
+                }
+            </style>   
+            <!--end of icon link-->
+            <link href="https://zenix.dexignzone.com/laravel/demo/vendor/sweetalert2/dist/sweetalert2.min.css" rel="stylesheet" type="text/css"/>
+
+
+            <link rel="stylesheet" href="assist/icon/boxicons.css">
+            <link rel="stylesheet" href="assist/icon/flag-icons.css">
+            <link rel="stylesheet" href="assist/icon/fontawesome.css">
+</head>
+<body>
+
+
+
+    <div class="col-lg-8 order-lg-2 order-1 align-self-end mb-4">
+        <div class="card">
+          <div class="d-flex align-items-end row">
+            <div class="col-sm-7">
+              <div class="card-body">
+                <h5 class="card-title text-primary">Congratulations John! 🎉</h5>
+                <p class="mb-4">You have done <span class="fw-bold">72%</span> more sales today. Check your new badge in your profile.</p>
+    
+                <a href="javascript:;" class="btn btn-sm btn-primary">View Badges</a>
+              </div>
+            </div>
+            <div class="col-sm-5 text-center text-sm-left">
+              <div class="card-body pb-0 px-0 px-md-4">
+                <img src="assist/img/man-with-laptop-light.png" height="140" alt="View Badge User" data-app-light-img="illustrations/man-with-laptop-light.png" data-app-dark-img="illustrations/man-with-laptop-dark.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="col-lg-8 order-lg-3 col-12 align-self-end order-4 mb-4">
+        <div class="card">
+          <div class="d-flex align-items-end row">
+            <div class="col-sm-5 text-center text-sm-left">
+              <div class="card-body pb-0">
+                <img src="assist/img/sitting-girl-with-laptop-light.png" height="140" alt="Target User" data-app-dark-img="illustrations/sitting-girl-with-laptop-dark.png" data-app-light-img="illustrations/sitting-girl-with-laptop-light.png">
+              </div>
+            </div>
+            <div class="col-sm-7">
+              <div class="card-body">
+                <h5 class="card-title">Welcome back Anna!</h5>
+                <p class="mb-4">You have 12 task to finish today, Your already completed 189 task good job.</p>
+    
+                <span class="btn-sm btn-primary ">78% of target</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-12 col-sm-6 col-lg-4 mb-4">
+        <div class="card">
+          <div class="card-body text-center">
+            <i class="mb-3 bx bx-md bx-credit-card"></i>
+            <h5>Add New Credit Card</h5>
+            <p> Quickly collect the credit card details, built in input mask and form validation support.</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addNewCCModal"> Show </button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-12 col-sm-6 col-lg-4 mb-4">
+        <div class="card">
+          <div class="card-body text-center">
+            <i class="mb-3 bx bx-md bx-gift"></i>
+            <h5>Refer &amp; Earn</h5>
+            <p>Use Refer &amp; Earn modal to encourage your exiting customers refer their friends &amp; colleague.</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#referAndEarn"> Show </button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-12 col-sm-6 col-lg-4 mb-md-0 mb-4">
+        <div class="card">
+          <div class="card-body text-center">
+            <i class="mb-3 bx bx-md bx-mobile-alt"></i>
+            <h5>Enable OTP</h5>
+            <p>Use this modal to enhance your application security by enabling authentication with OTP.</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#enableOTP"> Show </button>
+          </div>
+        </div>
+      </div>
+
+
+      <input type=button name=type id='bt1' value='Show Box 3' onclick="setVisibility('sub3','sub4');";> 
+      <div id="sub3">Message Box 3</div>
+      <br><br>
+      <div id="sub4" style="display: none;">Message Box 4</div>
+
+
+
+<!--edit form-->
+
+
+<!--card form edit-->
+      <div class="modal fade show" id="addNewCCModal" tabindex="-1" style="display: none;" aria-modal="true" role="dialog">
+        <div class="modal-dialog modal-dialog-centered1 modal-simple modal-add-new-cc">
+          <div class="modal-content p-3 p-md-5">
+            <div class="modal-body">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="text-center mb-4">
+                <h3>Add New Card</h3>
+                <p>Add new card to complete payment</p>
+              </div>
+              <form id="addNewCCForm" class="row g-3 fv-plugins-bootstrap5 fv-plugins-framework" onsubmit="return false" novalidate="novalidate">
+                <div class="col-12 fv-plugins-icon-container">
+                  <label class="form-label w-100" for="modalAddCard">Card Number</label>
+                  <div class="input-group input-group-merge has-validation">
+                    <input id="modalAddCard" name="modalAddCard" class="form-control credit-card-mask" type="text" placeholder="1356 3215 6548 7898" aria-describedby="modalAddCard2">
+                    <span class="input-group-text cursor-pointer p-1" id="modalAddCard2"><span class="card-type"></span></span>
+                  </div><div class="fv-plugins-message-container invalid-feedback"></div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <label class="form-label" for="modalAddCardName">Name</label>
+                  <input type="text" id="modalAddCardName" class="form-control" placeholder="John Doe">
+                </div>
+                <div class="col-6 col-md-3">
+                  <label class="form-label" for="modalAddCardExpiryDate">Exp. Date</label>
+                  <input type="text" id="modalAddCardExpiryDate" class="form-control expiry-date-mask" placeholder="MM/YY">
+                </div>
+                <div class="col-6 col-md-3">
+                  <label class="form-label" for="modalAddCardCvv">CVV Code</label>
+                  <div class="input-group input-group-merge">
+                    <input type="text" id="modalAddCardCvv" class="form-control cvv-code-mask" maxlength="3" placeholder="654">
+
+                  </div>
+                </div>
+                <div class="col-12">
+                  <label class="switch">
+                    <input type="checkbox" class="switch-input">
+                    <span class="switch-toggle-slider">
+                      <span class="switch-on"></span>
+                      <span class="switch-off"></span>
+                    </span>
+                    <span class="switch-label">Save card for future billing?</span>
+                  </label>
+                </div>
+                <div class="col-12 text-center">
+                  <button type="submit" class="btn btn-primary me-sm-3 me-1 mt-3">Submit</button>
+                  <button type="reset" class="btn btn-label-secondary btn-reset mt-3" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+                </div>
+              <input type="hidden"></form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+<!--earn and refer-->
+      <div class="modal fade show" id="referAndEarn" tabindex="-1" style="display: none;" aria-modal="true" role="dialog">
+        <div class="modal-dialog modal-lg modal-simple modal-refer-and-earn">
+          <div class="modal-content p-3 p-md-5">
+            <div class="modal-body">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="text-center mb-4">
+                <h3>Refer &amp; Earn</h3>
+                <p class="text-center mb-5 w-75 m-auto">Invite your friend to Sneat, if they sign up, you and your friend will get 30 days free trial.</p>
+              </div>
+              <div class="row">
+                <div class="col-12 col-lg-4 px-4">
+                  <div class="d-flex justify-content-center mb-4">
+                    <div class="modal-refer-and-earn-step bg-label-primary">
+                      <i class="bx bx-message-square-dots"></i>
+                    </div>
+                  </div>
+                  <div class="text-center">
+                    <h5>Send Invitation 🤟🏻</h5>
+                    <p class="mb-lg-0">Send your referral link to your friend</p>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 px-4">
+                  <div class="d-flex justify-content-center mb-4">
+                    <div class="modal-refer-and-earn-step bg-label-primary">
+                      <i class="bx bx-detail"></i>
+                    </div>
+                  </div>
+                  <div class="text-center">
+                    <h5>Registration 👩🏻‍💻</h5>
+                    <p class="mb-lg-0">Let them register to our services</p>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 px-4">
+                  <div class="d-flex justify-content-center mb-4">
+                    <div class="modal-refer-and-earn-step bg-label-primary">
+                      <i class="bx bx-gift"></i>
+                    </div>
+                  </div>
+                  <div class="text-center">
+                    <h5>Free Trial 🎉</h5>
+                    <p class="mb-0">Your friend will get 30 days free trial</p>
+                  </div>
+                </div>
+              </div>
+              <hr class="my-5">
+              <h5>Invite your friends</h5>
+              <form class="row g-3" onsubmit="return false">
+                <div class="col-lg-10">
+                  <label class="form-label" for="modalRnFEmail">Enter your friend’s email address and invite them to join Sneat 😍</label>
+                  <input type="text" id="modalRnFEmail" class="form-control" placeholder="example@domain.com" aria-label="example@domain.com">
+                </div>
+                <div class="col-lg-2 d-flex align-items-end">
+                  <button type="button" class="btn btn-primary">Send</button>
+                </div>
+              </form>
+              <h5 class="mt-4">Share the referral link</h5>
+              <form class="row g-3" onsubmit="return false">
+                <div class="col-lg-9">
+                  <label class="form-label" for="modalRnFLink">You can also copy and send it or share it on your social media. 🥳</label>
+                  <div class="input-group input-group-merge">
+                    <input type="text" id="modalRnFLink" class="form-control" value="https://themeselection.com">
+                    <span class="input-group-text text-primary cursor-pointer" id="basic-addon33">Copy link</span>
+                  </div>
+                </div>
+                <div class="col-lg-3 d-flex align-items-end">
+                  <div class="btn-social">
+                    <button type="button" class="btn btn-icon btn-facebook mr-2"><i class="tf-icons bx bxl-facebook"></i></button>
+                    <button type="button" class="btn btn-icon btn-twitter mr-2"><i class="tf-icons bx bxl-twitter"></i></button>
+                    <button type="button" class="btn btn-icon btn-linkedin"><i class="tf-icons bx bxl-linkedin"></i></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<!--crete app edit--> 
+<div class="modal fade show" id="enableOTP" tabindex="-1" style="display: none;" aria-modal="true" role="dialog">
+    <div class="modal-dialog modal-simple modal-enable-otp modal-dialog-centered">
+      <div class="modal-content p-3 p-md-5">
+        <div class="modal-body">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="text-center mb-4">
+            <h3 class="mb-5">Enable One Time Password</h3>
+          </div>
+          <h6>Verify Your Mobile Number for SMS</h6>
+          <p>Enter your mobile phone number with country code and we will send you a verification code.</p>
+          <form id="enableOTPForm" class="row g-3 fv-plugins-bootstrap5 fv-plugins-framework" onsubmit="return false" novalidate="novalidate">
+            <div class="col-12 fv-plugins-icon-container fv-plugins-bootstrap5-row-valid">
+              <label class="form-label" for="modalEnableOTPPhone">Phone Number</label>
+              <div class="input-group input-group-merge has-validation">
+                <span class="input-group-text">+1</span>
+                <input type="text" id="modalEnableOTPPhone" name="modalEnableOTPPhone" class="form-control phone-number-otp-mask" placeholder="202 555 0111">
+              </div><div class="fv-plugins-message-container invalid-feedback"></div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary sweet-wrong">Submit</button>
+              <button type="reset" class="btn btn-label-secondary" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+            </div>
+          <input type="hidden"></form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://zenix.dexignzone.com/laravel/demo/vendor/global/global.min.js" type="text/javascript"></script>
+  <script src="https://zenix.dexignzone.com/laravel/demo/vendor/bootstrap-select/dist/js/bootstrap-select.min.js" type="text/javascript"></script>
+      <script src="https://zenix.dexignzone.com/laravel/demo/vendor/jquery-validation/jquery.validate.min.js" type="text/javascript"></script>
+  <script src="https://zenix.dexignzone.com/laravel/demo/js/plugins-init/jquery.validate-init.js" type="text/javascript"></script>
+      <script src="https://zenix.dexignzone.com/laravel/demo/js/custom.js" type="text/javascript"></script>
+  <script src="https://zenix.dexignzone.com/laravel/demo/js/deznav-init.js" type="text/javascript"></script>
+  <script src="https://zenix.dexignzone.com/laravel/demo/js/demo.js" type="text/javascript"></script>
+  <script src="https://zenix.dexignzone.com/laravel/demo/js/styleSwitcher.js" type="text/javascript"></script>
+
+  <script src="assist/js/sweetalert.init.js"></script>  
+  <script src="https://zenix.dexignzone.com/laravel/demo/js/styleSwitcher.js" type="text/javascript"></script>
+  <script src="https://zenix.dexignzone.com/laravel/demo/vendor/sweetalert2/dist/sweetalert2.min.js" type="text/javascript"></script>
+
+<script language="JavaScript">
+function setVisibility(id1,id2) {
+if(document.getElementById('bt1').value=='Show Box 3'){
+document.getElementById('bt1').value = 'Show Box 4';
+document.getElementById(id1).style.display = 'inline';
+document.getElementById(id2).style.display = 'none';
+}else{
+document.getElementById('bt1').value = 'Show Box 3';
+document.getElementById(id1).style.display = 'none';
+document.getElementById(id2).style.display = 'inline';
+}
+}
+</script>
+</body>
+</html>
